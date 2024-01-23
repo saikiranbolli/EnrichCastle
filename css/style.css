@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ===== Scrollbar CSS ===== */
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--active_color);
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif !important;
+    font-style: normal;
+    font-size: 1rem !important;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --theme-color:#90c43c;
+    --active_color:#fcac74;
+    --secondary_color:#b2adad;
+    --grey_color:#f0ecec;
+    --light_color:#e0e8d4;
+    --bright_color:#997d7d;
+    --dark_color:#302c2c;
+  }
+  .agency_theme_color{
+    color: var(--active_color);
+  }
+  .enrich_border_col{
+    border: 1px solid var(--active_color);
+  }
+  .agency_bg_color{
+    background-color: var(--active_color) !important;
+  }
+  .agency_secondary_color{
+    color: var(--secondary_color);
+  }
+  .agency_advantage_color{
+    background-color: var(--grey_color);
+  }
+  .dg_dark_color{
+    background-color: var(--dark_color);
+  }
+  .agency_light{
+    color: var(--light_color);
+  }
+  .font-7{
+    font-size: 12px;
+  }
+  .nav_icons svg:hover{
+    fill: var(--theme-color);
+  }
+  .bright_color{
+    background-color: var(--bright_color);
+  }
+  .agency_nav_items a{
+    position: relative;
+  }
+  button.read_more{
+    background-color: var(--active_color);
+    border-bottom: 2px solid red;
+  }
+  .agency_nav_items a.active::after{
+    content: "";
+    background-color: var(--active_color);
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    bottom: -10px;
+    left: 0;
+  }
+  .agency_logo img{
+    width: 100%;
+    max-width: 50%;
+    padding: 13px 0px;
+}
+  .carousel-item img{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  .agency_nav_items a:hover::after{
+    content: "";
+    background-color: var(--active_color);;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    bottom: -10px;
+    left: 0;
+  }
+  p.mx-auto{
+    width: 75%;
+}
+  .agency_project input{
+    width: 100%;
+  }
+  .agency_section_two .agency_advantage_color{
+    width: 100%;
+    max-width: 50%;
+  }
+.star_col{
+    background-color: var(--active_color);
+    position: absolute;
+    left: 41%;
+    top: -38px;
+}
+.agency_end_border{
+    border-right: 2px solid var(--light_color);
+}
+
+.nav {
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+    width: 25%;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 16px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    color: #efefef;
+  }  
+  .nav > #nav-check {
+    display: none;
+  }
+
+  .trait_sec:hover{
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  /* video content */
+  .bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+    background: url(https://designsupply-web.com/samplecontent/vender/codepen/20181014.png) no-repeat center center/cover;
+  }
+  video {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  .overlay {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+    background-size: 3px 3px;
+    z-index: 2;
+  }
+  .content_goe_here{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .content_goe_here h1 {
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
+    height: 50px;
+  }
+
+  /* investing section */
+  
+
+.list-ic a {
+  color: #788288;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.list-ic li {
+  position: relative;
+}
+.list-ic li span {
+  display: inline-block;
+  font-weight: 800;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background: var(--active_color);
+  color: white;
+  position: relative;
+}
+
+.list-ic.vertical li {
+  list-style-type: none;
+  text-align: left;
+}
+.list-ic.vertical li span {
+  margin: 1.4em 0;
+}
+
+.enrich_section_four .row .col-lg-4 img{
+  width: 100%;
+  max-width: 50px;
+}
+  
+.enrich_section_four .row .agency_advantage_color:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .enrich_section_four .row .agency_advantage_color:hover img {
+    transform: scale(1.2);
+}
+.whatsapp-ico{
+    fill: white;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
+.contact_form input::placeholder {
+  color:var(--active_color) /* Set your desired color */
+}
+#back-to-up{
+  z-index: 3;
+}
+.sub_footer{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.services2 .txt1{
+  padding: 0px 0px 10px 0px;
+}
+.services2 .txt1::before{
+  content: '';
+  width: 100%;
+  max-width: 90px;
+  height: 2px;
+  background-color: var(--dark_color);
+  max-height: 10px;
+  position: absolute;
+  margin-top: 25px;
+}
+.shadow_footer{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.trait_sec img {
+  width: 100%;
+  max-width: 60px;
+}
